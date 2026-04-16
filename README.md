@@ -9,3 +9,6 @@ Use all sales data and filter for only data on pink morsels. Calculate sales. Re
 
 ## Task 3
 Create Dash app to visualise pink morsel sales data using a line chart.
+
+## Task 4
+a. add radios to dash app to filter data
