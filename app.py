@@ -12,7 +12,7 @@ df = pd.read_csv(DATA_PATH)
 df["Date"] = pd.to_datetime(df["Date"])
 
 cutoff = pd.Timestamp("2021-01-15")
-REGION_OPTIONS = ["north", "east", "south", "west", "all"]
+REGION_OPTIONS = ["all", "north", "east", "south", "west"]
 
 
 def create_region_sales_figure(region: str):
@@ -29,7 +29,7 @@ app = Dash(__name__)
 
 app.layout = html.Div(
     [
-        html.H1("Pink Morsel Sales Before vs After 15 Jan 2021"),
+        html.H1("Pink Morsel Sales"),
         dcc.RadioItems(
             id="region-filter",
             options=[{"label": region, "value": region} for region in REGION_OPTIONS],
